@@ -1,4 +1,4 @@
-# Run queries in Big Query from the command line
+# Running queries in BigQuery from the command line
 
 I know you can do this with the [bq command line tool](https://cloud.google.com/bigquery/bq-command-line-tool), but if you need to run queries from a Windows shell (which sucks), and you have complicated enough queries (several pages long), you might want to consider this script.
 
@@ -8,7 +8,7 @@ I'm sure that if you are smarter than me, you'll be able to figure out the bq to
 
 ## Files and folders
 
-We are connecting to Big Query, so we need a few libraries in our path to run the script:
+We are connecting to BigQuery, so we need a few libraries in our path to run the script:
 
 * `httplib2`
 * `apiclient`
@@ -17,7 +17,7 @@ We are connecting to Big Query, so we need a few libraries in our path to run th
 
 Outside those folders, `query.py` is where everything happens. I did include a `_queries\sample` file with a sample query so you can test the script right away.
 
-## Authenticating with Big Query
+## Authenticating with BigQuery
 
 This `query.py` script will request access to the Big Query API using OAuth2, so before executing it, we need to generate a client ID and client secret:
 
