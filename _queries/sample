@@ -1,0 +1,3 @@
+select repository_name, repository_url, repository_size, repository_owner  
+from [publicdata:samples.github_timeline] 
+limit 50
